@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color:skyblue;
+    color:white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.8); 
+    z-index: 9999; 
+    opacity: 20;
+    /* backdrop-filter: blur(10px);     */
+}
+
+.nav-link.active {
+    /* Styles applied to the active navigation link */
+    font-weight: bold; /* Example: Make active link bold */
+    color: #007bff; /* Example: Change active link color */
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #FFB6C1;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+  }
+
+  nav ul li a.active, nav ul li a[href="#projects"] {  /* Target link with href="#about" */
+    font-weight: bold;
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+  }
+  
+
+
+  nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    /* border: 1px solid #ffb6c1; 
+    */
+    background-color:pink;
+    border-radius: 5px;
+  }
+
+
+
+  
+.project-card{
+    background-color:black;
+    color:white;
+    padding:20px;
+    justify-content: space-between;
+}
+
+
+
+footer {
+    /* background-color: #FFB6C1; */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-color:#FF3EA5;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; /* Make projects full width on smaller screens */
+    }
+    }
+      

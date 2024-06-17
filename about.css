@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: skyblue;
+    color: white;
+}
+
+section{
+  padding:40px;
+  margin:50px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255,0.8); 
+    z-index: 9999; 
+    opacity: 20;
+}
+
+
+.nav-link.active {
+  font-weight: bold; /* Example: Make active link bold */
+  color: #007bff; /* Example: Change active link color */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #FFB6C1;
+    border-radius: 5px;
+}
+
+nav ul li a.active, nav ul li a[href="#about"] {  /* Target link with href="#about" */
+  font-weight: bold;
+  color: #007bff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+
+nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  /* border: 1px solid #ffb6c1; 
+  */
+  background-color:pink;
+  border-radius: 5px;
+}
+.about-me {
+    padding: 50px 0;
+    text-align: center; /* Center the content */
+    height: 100vh;
+
+  }
+  
+  .about-me h2 {
+    margin-bottom: 20px;
+  }
+  .about-me h3 {
+    margin: 100px;
+  }
+  
+ 
+  
+  .about-me p {
+    /* line-height: 1.5; Adjust line spacing for readability */
+    margin: 50px;
+    /* Hide the text descriptions */
+    color:white;
+    font-size: 24px;
+  }
+
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Convert the list to a flex container */
+    justify-content: center; /* Center the icons horizontally */
+    flex-wrap: wrap; /* Allow icons to wrap to multiple lines if needed */
+  }
+  
+  .skills-list li {
+    margin-bottom: 10px;
+  }
+  
+  .skills-list li i {
+    font-size: 100px;
+    margin-right: 50px; /* Adjust margin for spacing between icons */
+    /* color: #333; Adjust icon color if needed */
+    justify-content: space-between;
+  }
+
+  .experience h3{
+    text-align: center;
+  }
+
+/* Add styles for experience cards */
+.experience-container {
+  display: flex; /* Arrange cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap to multiple lines if needed */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 20px auto; /* Add some margin for spacing */
+  width: 80%; /* Adjust width as needed (optional) */
+}
+
+.experience-card {
+  background-color: black; 
+  padding: 20px;
+  border-radius: 5px; /* Add rounded corners */
+  margin: 10px; /* Add spacing between cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  /* Remove width calculation: */
+  width: calc(30% - 20px); 
+  text-align: left; /* Align content to the left */
+}
+
+
+
+  footer {
+    /* background-color: #FFB6C1; */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-color:#FF3EA5;
+}
